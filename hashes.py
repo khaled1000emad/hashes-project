@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import requests
 from bs4 import BeautifulSoup
 import hashlib
@@ -25,4 +26,4 @@ while not op == 3:
 		print('please enter your word: ')
 		word = input()
 		enc = hashlib.md5(bytes(word, encoding='utf-8')).hexdigest()
-		termcolor.cprint('Word decrypted successfully: {}'.format(enc), 'green')
+		termcolor.cprint('Word encrypted successfully: {}'.format(enc), 'green')
